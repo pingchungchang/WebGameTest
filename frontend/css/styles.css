@@ -1,0 +1,36 @@
+html,body {
+	display: flex;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.hide {
+	display:none
+}
+.show {
+	display:block
+}
+
+.gameobject {
+	position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+	width: 100px;
+	z-index: 1;
+}
+
+.objectimage{
+    padding: 3px;
+	max-height: 80px;
+	width: auto;
+}
+
+.headtext{
+    font-size: 20px;
+	text-align: center;
+}
+

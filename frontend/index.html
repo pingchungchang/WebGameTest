@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCC test</title>
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+	<div id='OpenScreen' class='show'>
+		<button id='OpenScreenButton'>Start Game!</button>
+	</div> <div id='PlayScreen' class='hide'>
+		<div id='PlayScreenScore' style='position:absolute;top:10%;left:90%;font-size:30px;'>Score</div>
+		<input id='PlayScreenInputBox' class='hide' style='position:absolute;top:60%;left:50%;z-index:2;font-size: 20px'></input>
+	</div>
+	<div id='GameOverScreen' class='hide'>
+		<h1> Game Over!!</h1>
+		<h1 id='GameOverScreenScore' style='text-align:center;'>Game Over!!</h1>
+	</div>
+	<script src="screens/scene.js"></script>
+	<script src="screens/playscreen.js"></script>
+	<script src="screens/openscreen.js"></script>
+	<script src="screens/gameoverscreen.js"></script>
+	<script src="sender.js"></script>
+	<script src="receiver.js"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>
+
