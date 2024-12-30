@@ -5,8 +5,8 @@ class OpenScreen extends Scene{
 	}
 
 	Init() {
-		var heading = document.getElementById("OpenScreenButton");
-		heading.addEventListener('click',() => ChangeScene(this,playscreen));
+		let StartGameButton = document.getElementById("OpenScreenStartGameButton");
+		StartGameButton.addEventListener('click',() => ChangeScene(this,playscreen));
 	}
 
 	SendKey() {
