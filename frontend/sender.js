@@ -13,6 +13,7 @@ function Send(title,args) { // args should be a json
 PressedKeys = new Set();
 
 document.onkeydown = function(e) {
+	if(e.key == 'Alt' || e.key == 'Tab')return;
 	PressedKeys.add(e.key);
 	return;
 };
