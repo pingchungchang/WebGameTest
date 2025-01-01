@@ -1,6 +1,6 @@
 html,body {
 	display: flex;
-	margin: 0;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
@@ -8,10 +8,18 @@ html,body {
 }
 
 .hide {
-	display:none
+	display:none;
 }
 .show {
-	display:block
+	display:flex;
+}
+
+.screen {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
 }
 
 .gameobject {
@@ -34,3 +42,11 @@ html,body {
 	text-align: center;
 }
 
+.settings{
+	height:50px;
+	width:500px;
+	font-size:50px;
+	text-align:center;
+	border-color:black;
+	border-style:solid;
+}

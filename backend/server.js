@@ -1,6 +1,5 @@
-const OpenScreen = require("./openscreen.js");
+const EmptyScreen = require("./emptyscreen.js");
 const PlayScreen = require("./playscreen.js");
-const GameOverScreen = require("./gameoverscreen.js");
 
 const PORT = 48763;
 const WebSocket = require('ws');
@@ -15,9 +14,10 @@ var PlayerClientMap = {};
 var ClientPlayerMap = {};
 
 const ScreenMap = {
-	OpenScreen: new OpenScreen(),
+	OpenScreen: new EmptyScreen(),
 	PlayScreen: new PlayScreen('./data/demo.txt'),
-	GameOverScreen: new GameOverScreen()
+	GameOverScreen: new EmptyScreen(),
+	SettingScreen: new EmptyScreen()
 };
 
 //ChangeScreen doesn't send stuff to client!!
