@@ -34,6 +34,7 @@ class PlayScreen extends Scene{
 		this.ScreenWidth = 1200;
 		this.ScreenHeight = 600;
 
+		this.PlayerNameHandler = new Namer('./data/playernames.txt');
 		this.NameHandler = new Namer(NameFile);
 		this.Players = new Map();
 		this.LoggedInPlayers = new Map();
@@ -156,7 +157,7 @@ class PlayScreen extends Scene{
 
 	AddPlayer(playerid,args) {
 		console.log(`PlayScreen add player:${playerid}`);
-		const name = this.NameHandler.GetName();
+		const name = this.PlayerNameHandler.GetName();
 		this.Players.set(playerid,new PlayScreen.PlayerInfo(playerid,
 				RandInt(0,this.H),RandInt(0,this.W),'blue.jpg',name));
 		this.LoggedInPlayers.set(playerid,this.Players.get(playerid));
